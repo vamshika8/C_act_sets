@@ -12,9 +12,10 @@ void output(int a, int b, int c, int largest);
 #include<stdio.h>
 int input()
 {
-    int a,b,c,largest;
+    int n;
     printf("enter three numbers:");
-    scanf("%d",&a,);
+    scanf("%d",&n);
+    return n;
 }
 
 int compare(int a, int b, int c);
@@ -43,7 +44,7 @@ int main()
     a=input();
     b=input();
     c=input();
-    largest=compare(a,b,c,largest);
+    largest=compare(a,b,c);
     output(a,b,c,largest);
     return 0;
 }
