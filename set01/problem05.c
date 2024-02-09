@@ -18,7 +18,7 @@ int input()
     return n;
 }
 
-int compare(int a, int b, int c);
+int compare(int a, int b, int c)
 {
     if(a>=b && a>=c)
     {
@@ -33,7 +33,7 @@ int compare(int a, int b, int c);
         return c;
     }
 }
-void output(int a, int b, int c, int largest);
+void output(int a, int b, int c, int largest)
 {
     printf("The largest among %d,%d is %d",a,b,c,largest);
 }

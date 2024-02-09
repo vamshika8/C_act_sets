@@ -23,11 +23,10 @@ void compare(int a, int b, int c, int *largest)
    {
     *largest =b;
    }  
-   else(*largest >=a && *largest >=b)
-   {
-    *largest =c;
-   }
-
+   else if(*largest >=a && *largest >=b)
+{
+  *largest = c;
+}
 }
 
 void output(int a, int b, int c, int largest)
