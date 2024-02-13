@@ -31,6 +31,7 @@ void output(int a,int b,int sum)
     printf("sum is %d",sum);
 }
 
+
 int main()
 {
     int a,b,sum;
@@ -39,3 +40,4 @@ int main()
     sum=add(a,b);
     output (a,b,sum);
 }
+

@@ -1,5 +1,4 @@
-/*
-5. Write a C program to compare three numbers using **pass by value**
+/*5. Write a C program to compare three numbers using **pass by value**
 
 ***Function Declarations***
 
