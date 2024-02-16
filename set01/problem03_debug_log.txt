@@ -46,7 +46,7 @@ enter the number:3
 (gdb) n
 41          output (a,b,sum);
 (gdb) n
-sum is 542      }
+sum is 542      
 (gdb) n
 0x00401288 in __register_frame_info ()
 (gdb) n
