@@ -30,12 +30,20 @@ int input_side()
 int check_scalene(int a, int b, int c)
 {
    if (a != b && b != c && a != c)
-    else
+   else
+   
 }
 
 void output(int a, int b, int c, int isscalene)
 {
   printf("The sides of the triangle are: %d, %d, %d\n", a, b, c,isscalene);
 }
+
+
+
+
+
+
+
 
 
