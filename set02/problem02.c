@@ -15,11 +15,17 @@ int check_scalene(int a, int b, int c);
 void output(int a, int b, int c, int isscalene);
 int main()
 {
-
+  int a,b,c,isscalene;
+  a=input_side();
+  b=input_side();
+  c=input_side();
+  isscalene=(a,b,c);
+  output(a,b,c,isscalene);
+  return 0;
 }
 
 
-int input_side()
+int input_side() //userdefined func
 {
     int side_of_triangle;
     printf("Enter the length of a side: ");
@@ -27,17 +33,32 @@ int input_side()
     return side_of_triangle;
 }
 
-int check_scalene(int a, int b, int c)
+int check_scalene(int a, int b, int c) // 
 {
-   if (a != b && a != c)
+   int isscalene;
+   if (a != b && a != c && b!=c)
+   {
+      return 1;
+   }
    else
-   
+   {
+        return 0;
+   }
+      return isscalene;
+
 }
 
 
 void output(int a, int b, int c, int isscalene)
 {
-  printf("The sides of the triangle are: %d, %d, %d\n", a, b, c,isscalene);
+  if(isscalene==1)
+  { 
+    printf("triangle is a scalene");
+  }else{
+    printf("triangle is not scalene");
+  }
+
+  
 }
 
 
