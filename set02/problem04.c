@@ -7,6 +7,8 @@ void input_array(int n, int a[n]);
 int sum_composite_numbers(int n, int a[n]);
 void output(int sum);
 ```*/
+
+
 #include<stdio.h>
 int input_array_size();
 void input_array(int n, int a[n]);
@@ -21,7 +23,6 @@ int main()
     int sum = sum_composite_numbers(n, a);
     output(sum);
     return 0;
-
 }
 
 int input_array_size()
@@ -44,13 +45,19 @@ void input_array(int n, int a[n])
 
 int sum_composite_numbers(int n, int a[n])
 {
-
-
+int sum = 0;
+    for (int i = 0; i < n; i++) {
+        if (is_composite(a[i])) {
+            sum += a[i];
+        }
+    }
+    return sum;
 }
 
 
 void output(int sum)
 {
-
-
+printf("Sum of composite numbers: %d\n", sum);
 }
+
+

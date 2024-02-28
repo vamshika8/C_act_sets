@@ -57,8 +57,6 @@ void output(int a, int b, int c, int isscalene)
   }else{
     printf("triangle is not scalene");
   }
-
-  
 }
 
 
