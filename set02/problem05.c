@@ -16,11 +16,14 @@ int find_gcd(int a, int b) {
     return a;
 }
 
-void output(int a, int b, int gcd) {
-    printf("The GCD of %d and %d is %d\n", a, b, gcd);
+void output(int a, int b, int gcd)
+ {
+    printf("The gcd of %d and %d is %d\n", a, b, gcd);
 }
 
-int main() {
+int main() 
+
+{
     int num1, num2;
     num1 = input();
     num2 = input();
